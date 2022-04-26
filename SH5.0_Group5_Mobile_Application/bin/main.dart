@@ -2,7 +2,7 @@ import 'dart:io';
 
 void main() {
   print("Enter your subject: ");
-  String subject= stdin.readLineSync();
+  String ? subject = stdin.readLineSync();
 
   print("Enter your score: ");
   int score = int.parse(stdin.readLineSync());
