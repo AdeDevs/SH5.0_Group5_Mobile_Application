@@ -1,12 +1,17 @@
+//This imports the required dart package
 import 'dart:io';
 
+//This initializes the app
 void main() {
+  
+  //These request input from user
   stdout.write("Enter Your Subject: ");
   String subject = (stdin.readLineSync()!);
 
   stdout.write("Enter Your Score: ");
   num Score = num.parse(stdin.readLineSync()!);
 
+  //These are terms that determine grade of student
   if (Score >= 80) {
     print("Your Grade For $subject is A");
   } else if (Score >= 70) {
@@ -20,5 +25,4 @@ void main() {
   } else {
     print("Your Grade For $subject is F");
   }
-  print("$Score");
 }
